@@ -1,7 +1,34 @@
 .App {
-  text-align: center;
+  min-height: 100vh;
+
+}
+.main-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.input-bar{
+  width:50%;
+  border:none;
+  padding:10px;
+}
+.buttons{
+  background: linear-gradient(to right,tomato,orange);
+  border:none;
+  padding:10px 20px;
+  color:white;
+
+
+}
+.mains{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
 }
 
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +63,4 @@
     transform: rotate(360deg);
   }
 }
+*/
