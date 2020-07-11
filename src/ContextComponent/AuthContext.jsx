@@ -4,7 +4,7 @@ export const AuthCon=createContext();
 
 class AuthContext extends Component {
     state={
-        isAuth:false
+        isAuth:true
     }
     Checkauth=()=>{
         this.setState({isAuth:!this.state.isAuth})
