@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ThemeContext } from '../ContextComponent/ContextApi';
+import { ThemeContext } from '../../ContextComponent/BasicContext/ContextApi';
 
 class ThemeChanger extends Component {
     static contextType=ThemeContext;

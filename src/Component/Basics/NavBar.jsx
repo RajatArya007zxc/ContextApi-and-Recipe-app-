@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ThemeContext } from '../ContextComponent/ContextApi';
-import { AuthCon } from '../ContextComponent/AuthContext';
+import { ThemeContext } from '../../ContextComponent/BasicContext/ContextApi';
+import { AuthCon } from '../../ContextComponent/BasicContext/AuthContext';
 
 class NavBar extends Component {
    // static contextType=ThemeContext;
