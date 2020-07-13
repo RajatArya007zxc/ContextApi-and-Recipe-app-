@@ -1,4 +1,4 @@
-
+/*
 import React,{ createContext,useState } from 'react';
 import uuid from 'react-uuid';
 
@@ -19,6 +19,28 @@ const BookContext = (props) => {
     return (
        // <BookConGo.Provider value={{...books,ForAdd:AddBooks,ForDel:DeleteBooks}}>
         <BookConGo.Provider value={{books,AddBook,DeleteBooks}}>
+{props.children}
+        </BookConGo.Provider>
+        
+    );
+}
+
+export default BookContext;
+*/
+import React,{ createContext,useReducer } from 'react';
+import uuid from 'react-uuid';
+import { BookRed } from '../../Component/ReducerPro/BookReducer';
+
+export const BookConGo=createContext();
+
+const BookContext = (props) => {
+
+    const[books,dispatch]=useReducer(BookRed,[])
+
+  
+    return (
+       // <BookConGo.Provider value={{...books,ForAdd:AddBooks,ForDel:DeleteBooks}}>
+        <BookConGo.Provider value={{books}}>
 {props.children}
         </BookConGo.Provider>
         
