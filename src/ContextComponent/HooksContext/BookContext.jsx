@@ -10,7 +10,7 @@ const BookContext = (props) => {
         title:"the Vinci Code",author:"unknown",id:2
     }])
 
-    const AddBooks=(t,a)=>{
+    const AddBook=(t,a)=>{
         return setbooks([...books,{title:t,author:a,id:uuid()}])
     }
     const DeleteBooks=(id)=>{
@@ -18,7 +18,7 @@ const BookContext = (props) => {
     }
     return (
        // <BookConGo.Provider value={{...books,ForAdd:AddBooks,ForDel:DeleteBooks}}>
-        <BookConGo.Provider value={{books,AddBooks,DeleteBooks}}>
+        <BookConGo.Provider value={{books,AddBook,DeleteBooks}}>
 {props.children}
         </BookConGo.Provider>
         
